@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pages/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Vertex</title>
+    </head>
+    <body class="root">
+        <header class="header">
+            <div class="up-menu">
+                <div class="up-menu__wrapper">
+                    <img class="up-menu__logo" src="images/logo.svg" alt="логотип">
+                    <p class="up-menu__text">Создадим приятный климат в вашем доме</p>
+                </div>
+
+                <a class="up-menu__mobile-phone"></a>
+                <a class="up-menu__mobile-cart" href="cart.html"></a>
+
+                <div class="down-menu__catalog_mobile">
+                    <input type="checkbox" id="hmt" class="down-menu__checkbox_mobile">
+                    <label class="down-menu__burger_mobile" for="hmt">
+                      <span class="down-menu__line_mobile down-menu__line_number_one"></span>
+                      <span class="down-menu__line_mobile down-menu__line_number_two"></span>
+                      <span class="down-menu__line_mobile down-menu__line_number_three"></span>
+                    </label>
+                    <nav class="menu-mobile">
+                        <div id="wrap">
+                            <form class="wrap__form" action="" autocomplete="on">
+                                <input class="wrap__input1" id="search" name="search" type="text" placeholder="Введите название товара">
+                                <input class="wrap__input2" id="search_submit" type="submit">
+                            </form>
+                        </div>
+                        <ul class="menu-mobile__list">
+                            <li class="menu-mobile__item">
+                              <input class="menu-mobile__input" type="checkbox" checked>
+                              <i class="menu-mobile__arrow"></i>
+                              <h2 class="menu-mobile__title">Каталог</h2>                            
+                                <nav class="nav-mobile">
+                                    <a class="nav-mobile__link" href="conditioners.html">Кондиционеры</a>                                   
+                                    <a class="nav-mobile__link" href="#">Микроклимат</a>
+                                    <a class="nav-mobile__link" href="#">Комплектующие</a>
+                                    <a class="nav-mobile__link" href="#">Отопление</a>
+                                    <a class="nav-mobile__link" href="#">Фанкойлы</a>
+                                    <a class="nav-mobile__link" href="#">Чиллеры</a>
+                                    <a class="nav-mobile__link" href="#">Мульти-сплит системы</a>
+                                    <a class="nav-mobile__link" href="#">Компрессорно- конденсаторные блоки</a>
+                                    <a class="nav-mobile__link" href="#">Вентиляция</a>
+                                    <a class="nav-mobile__link" href="#">Воздуховоды</a>
+                                </nav>
+                            </li>
+                        </ul>
+                        <nav class="menu-mobile__nav">
+                            <a class="menu-mobile__nav-link" href="likes.html">Избранное</a>
+                            <a class="menu-mobile__nav-link" href="sales.html">% Акции</a>
+                            <a class="menu-mobile__nav-link" href="montash.html">Монтаж</a>
+                            <a class="menu-mobile__nav-link" href="delivery.html">Доставка</a>
+                            <a class="menu-mobile__nav-link" href="contacts.html">Контакты</a>
+                        </nav>
+
+                        <button class="menu-mobile__button" type="button">Заказать обратный звонок</button>
+                    </nav>
+                </div>
+
+                <nav class="up-menu__nav">
+                    <a class="up-menu__link" href="delivery.html">Доставка</a>
+                    <a class="up-menu__link" href="montazh.html">Монтаж</a>
+                    <a class="up-menu__link" href="contacts.html">Контакты</a>
+                    <a class="up-menu__link" href="sales.html">&#37; Акции</a>
+                </nav>
+                <div class="up-menu__contacts">
+                    <div class="up-menu__contacts-wrapper">
+                        <img class="up-menu__pic-phone" src="images/tel.svg" alt="телефон">
+                        <a class="up-menu__phone">+7(495) 926-08-22</a>
+                    </div>
+                    <p class="up-menu__phone-text">Обратный звонок</p>
+                </div>
+
+                <div class="popupCart">
+                    <h2 class="popupCart__title">Корзина</h2>
+                    <ul class="popupCart__list">
+                        <li class="popupCart__item">
+                            <img class="popupCart__img" src="images/cartImg1.png" alt="корзина">
+                            <p class="popupCart__text">Сплит-система RC-TWS21HN/IN ROYAL CLIMA</p>
+                            <p class="popupCart__cost">21 960 ₽</p>
+                        </li>
+
+                        <li class="popupCart__item">
+                            <img class="popupCart__img" src="images/cartImg1.png" alt="корзина">
+                            <p class="popupCart__text">Сплит-система RC-TWS21HN/IN ROYAL CLIMA</p>
+                            <p class="popupCart__cost">21 960 ₽</p>
+                        </li>
+
+                        <li class="popupCart__item">
+                            <p class="popupCart__text popupCart__text_total">Общая стоимость:</p>
+                            <p class="popupCart__cost popupCart__cost_total">43 920 ₽</p>
+                        </li>
+                    </ul>
+                    <a class="popupCart__button" href="cart.html">Оформить заказ</a>
+                    <img class="popupCart__close" src="images/close.svg" alt="закрыть окно">
+                </div>
+            </div>
+            <div class="down-menu">
+                <div class="down-menu__container">
+                    <div class="down-menu__catalog">
+                        <input type="checkbox" id="hmt" class="down-menu__checkbox">
+                        <label class="down-menu__burger" for="hmt">
+                          <span class="down-menu__line down-menu__line_number_one"></span>
+                          <span class="down-menu__line down-menu__line_number_two"></span>
+                          <span class="down-menu__line down-menu__line_number_three"></span>
+                        </label>
+                        <p class="down-menu__title down-menu__title_desktop">Каталог</p>
+                        <p class="down-menu__title down-menu__title_mobile">Меню</p>
+
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="conditioners.html">
+                                        <img class="menu__img" src="images/menu1.png" alt="Кондиционеры">
+                                        <p class="menu__text">Кондиционеры</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu2.png" alt="Мульти-сплит системы">
+                                        <p class="menu__text">Мульти-сплит системы</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu3.png" alt="Микроклимат">
+                                        <p class="menu__text">Микроклимат</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu4.png" alt="Комплектующие">
+                                        <p class="menu__text">Комплектующие</p>
+                                    </a>
+                                </li>
+                
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu5.png" alt="Отопление">
+                                        <p class="menu__text">Отопление</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu6.png" alt="Вентиляция">
+                                        <p class="menu__text">Вентиляция</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu7.png" alt="Воздуховоды">
+                                        <p class="menu__text">Воздуховоды</p>
+                                    </a>
+                                </li>
+                
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu8.png" alt="Фанкойлы">
+                                        <p class="menu__text">Фанкойлы</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu9.png" alt="Чиллеры">
+                                        <p class="menu__text">Чиллеры</p>
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__img" src="images/menu10.png" alt="Компрессорно- конденсаторные блоки">
+                                        <p class="menu__text">Компрессорно- конденсаторные блоки</p>
+                                    </a>
+                                </li>
+
+                                <li class="menu__item">
+                                    <nav class="up-menu__nav_mobile">
+                                        <a class="up-menu__link" href="sales.html">&#37; Акции</a>
+                                        <a class="up-menu__link" href="delivery.html">Доставка</a>
+                                        <a class="up-menu__link" href="montazh.html">Монтаж</a>
+                                        <a class="up-menu__link" href="contacts.html">Контакты</a>                                     
+                                    </nav>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="search">
+                        <form class="search__form">
+                            <label class="search__label" for="search">
+                                <img class="search__img" src="images/search.svg" alt="поиск">
+                            </label>
+                            <input class="search__input" id="search" type="search" placeholder="Поиск по сайту">
+                        </form>
+                        <div id="wrap">
+                            <form class="wrap__form" action="" autocomplete="on">
+                                <input class="wrap__input1" id="search" name="search" type="text" placeholder="Введите название товара">
+                                <input class="wrap__input2" id="search_submit" type="submit">
+                            </form>
+                        </div>
+                    </div>
+
+                    <a class="likes" href="like.html">
+                        <img class="likes__img" src="images/like.svg" alt="избранное">
+                        <p class="likes__text">Избранное</p>
+                    </a>
+
+                    <a class="button-cart">
+                        <img class="button-cart__img" src="images/cart.svg" alt="корзина">
+                        <p class="button-cart__text">2 товара</p>
+                    </a>
+                </div>   
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="slide">
+                <div class="slide__container">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <img class="slide__img" src="images/slide.png" style="width:100%">
+                          <img class="slide__img_mobile" src="images/slide_mobile.png" style="width:100%">
+                          <div class="text">
+                            <h2 class="slide__title">Широкий ассортимент Воздухоочистителей</h2>
+                            <a class="slide__button" href="catalog.html">Каталог &#10095;</a>
+                          </div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <img class="slide__img" src="images/slide.png" style="width:100%">
+                          <img class="slide__img_mobile" src="images/slide_mobile.png" style="width:100%">
+                          <div class="text">
+                            <h2 class="slide__title">Широкий ассортимент Воздухоочистителей</h2>
+                            <a class="slide__button" href="catalog.html">Каталог &#10095;</a>
+                          </div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <img class="slide__img" src="images/slide.png" style="width:100%">
+                          <img class="slide__img_mobile" src="images/slide_mobile.png" style="width:100%">
+                          <div class="text">
+                            <h2 class="slide__title">Широкий ассортимент Воздухоочистителей</h2>
+                            <a class="slide__button" href="catalog.html">Каталог &#10095;</a>
+                          </div>
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      <br>
+                      
+                      <!-- The dots/circles -->
+                      <div class="point" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                      </div>
+                </div>
+                <div class="product__block">
+                    <div class="slide__time">
+                        <p class="slide__time-text">Товар дня</p>
+                        <div id="countdown" class="countdown">
+                            <div class="countdown-number">
+                              <span class="hours countdown-time"></span>
+                            </div>
+                            <div class="countdown-number">:
+                              <span class="minutes countdown-time"></span>
+                            </div>
+                            <div class="countdown-number">:
+                              <span class="seconds countdown-time"></span>
+                            </div>
+                          </div>
+                    </div>
+                    <p class="product__sales">-50%</p>
+                    <img class="product__img" src="images/product-time.png" alt="сплит-система">
+                    <div class="product">
+                        <h2 class="product__title">Сплит-система Mitsubishi Electric</h2>
+                        <button class="product__like"></button>               
+                    </div>
+                    <div class="product__stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star no-checked"></span>
+                    </div>
+                    <div class="product__wrapper">
+                        <div class="product__container">
+                            <p class="product__old-price">45 000 ₽</p>
+                            <p class="product__new-price">25 000 ₽</p>
+                            <p class="product__credit">от 2500 ₽/мес</p>
+                        </div>
+                        <button class="product__button" type="button"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brand">
+                <ul class="brand__list">
+                    <li class="brand__item brand__item_1"></li>
+                    <li class="brand__item brand__item_2"></li>
+                    <li class="brand__item brand__item_3"></li>
+                    <li class="brand__item brand__item_4"></li>
+                    <li class="brand__item brand__item_5"></li>
+                    <li class="brand__item brand__item_6"></li>
+                </ul>
+            </section>
+
+            <section class="catalog-menu">
+                <div class="catalog-menu__wrapper">
+                    <h2 class="catalog-menu__title">Каталог</h2>
+                    <a class="catalog-menu__button" href="catalog.html"></a>
+                </div>
+                
+                <div class="catalog-menu__container">
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog5_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Отопление</p>
+                    </a>
+                    <a class="catalog-menu__link" href="conditioners.html">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog1_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Кондиционеры</p>
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog10_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Воздуховоды</p>
+                        <img class="catalog-menu__img" src="images/index_catalog3.png" alt="Воздуховоды">
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog9_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Вентиляция</p>
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog4_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Комплектующие</p>
+                        <img class="catalog-menu__img" src="images/index_catalog5.png" alt="Комплектующие">
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog6_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Фанкойлы</p>
+                        <img class="catalog-menu__img" src="images/index_catalog6.png" alt="Фанкойлы">
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog3_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Микроклимат</p>
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog2_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Мульти сплит-системы</p>
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog7_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Чиллеры</p>
+                        <img class="catalog-menu__img" src="images/index_catalog9.png" alt="Чиллеры">
+                    </a>
+                    <a class="catalog-menu__link" href="#">
+                        <img class="catalog-menu__img-mobile" src="images/index_catalog8_mobile.png" alt="отопление">
+                        <p class="catalog-menu__text">Компрессорно- конденсаторные блоки</p>
+                        <img class="catalog-menu__img" src="images/index_catalog10.png" alt="Компрессорно-конденсаторные блоки">
+                    </a>
+                </div>              
+            </section>
+
+            <section class="popular">
+                <div class="popular__wrapper">
+                    <h2 class="popular__title">Популярные товары</h2>
+                    <a class="popular__button" href="catalog.html"></a>
+                </div>
+                <div class="popular__container">
+                    <div class="product__block popular__block">
+                        <p class="product__sales popular__sales">-50%</p>
+                        <img class="product__img" src="images/productImg1.png" alt="сплит-система">
+                        <div class="product">
+                            <h2 class="product__title">Сплит-система Mitsubishi Electric</h2>
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                <p class="popular__check-text">В наличии</p>
+                            </div>
+                            <button class="product__like popular__like"></button>               
+                        </div>
+                        <div class="product__stars popular__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper">
+                            <div class="product__container">
+                                <p class="product__old-price">45 000 ₽</p>
+                                <p class="product__new-price">25 000 ₽</p>
+                                <p class="product__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product__block popular__block">
+                        
+                        <img class="product__img" src="images/productImg2.png" alt="Кассетный кондиционер">
+                        <div class="product">
+                            <h2 class="product__title popular__header">Кассетный кондиционер  Mitsubishi Electric</h2>
+                            <button class="product__like popular__like"></button> 
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                <p class="popular__check-text">В наличии</p>
+                            </div>              
+                        </div>
+                        <div class="product__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper">
+                            <div class="product__container">
+                                <p class="product__old-price">45 000 ₽</p>
+                                <p class="product__new-price">25 000 ₽</p>
+                                <p class="product__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product__block popular__block">
+                        <img class="product__img" src="images/productImg3.png" alt="Компактный вентилятор">
+                        <div class="product">
+                            <h2 class="product__title popular__header">Компактный вентилятор Mitsubishi Electric</h2>
+                            <button class="product__like popular__like"></button> 
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-in.svg" alt="check">
+                                <p class="popular__check-text_in">В наличии</p>
+                            </div>              
+                        </div>
+                        <div class="product__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper">
+                            <div class="product__container">
+                                <p class="product__old-price">45 000 ₽</p>
+                                <p class="product__new-price">25 000 ₽</p>
+                                <p class="product__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product__block popular__block">
+                        <img class="product__img" src="images/productImg3.png" alt="Компактный вентилятор">
+                        <div class="product">
+                            <h2 class="product__title popular__header">Компактный вентилятор Mitsubishi Electric</h2>
+                            <button class="product__like popular__like"></button>  
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-in.svg" alt="check">
+                                <p class="popular__check-text_in">В наличии</p>
+                            </div>              
+                        </div>
+                        <div class="product__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper">
+                            <div class="product__container">
+                                <p class="product__old-price">45 000 ₽</p>
+                                <p class="product__new-price">25 000 ₽</p>
+                                <p class="product__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular__container_mobile">
+                    <div class="product__block popular__block">
+                        <p class="product__sales popular__sales">-50%</p>
+                        <img class="product__img" src="images/popular_mobile.png" alt="сплит-система">
+                        <div class="product">
+                            <h2 class="product__title popular__title">Сплит-система Mitsubishi Electric или длинный заголовок в 3 строки</h2>
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                <p class="popular__check-text">В наличии</p>
+                            </div>
+                            <button class="product__like popular__like"></button>               
+                        </div>
+                        <div class="product__stars popular__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper popular__price">
+                            <div class="product__container">
+                                <p class="product__old-price popular__old-price">45 000 ₽</p>
+                                <p class="product__new-price popular__new-price">25 000 ₽</p>
+                                <p class="product__credit popular__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product__block popular__block">
+                        <p class="product__sales popular__sales">-50%</p>
+                        <img class="product__img" src="images/popular_mobile.png" alt="сплит-система">
+                        <div class="product">
+                            <h2 class="product__title popular__title">Сплит-система Mitsubishi Electric или длинный заголовок в 3 строки</h2>
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                <p class="popular__check-text">В наличии</p>
+                            </div>
+                            <button class="product__like popular__like"></button>               
+                        </div>
+                        <div class="product__stars popular__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper popular__price">
+                            <div class="product__container">
+                                <p class="product__old-price popular__old-price">45 000 ₽</p>
+                                <p class="product__new-price popular__new-price">25 000 ₽</p>
+                                <p class="product__credit popular__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product__block popular__block">
+                        <p class="product__sales popular__sales">-50%</p>
+                        <img class="product__img" src="images/popular_mobile.png" alt="сплит-система">
+                        <div class="product">
+                            <h2 class="product__title popular__title">Сплит-система Mitsubishi Electric или длинный заголовок в 3 строки</h2>
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                <p class="popular__check-text">В наличии</p>
+                            </div>
+                            <button class="product__like popular__like"></button>               
+                        </div>
+                        <div class="product__stars popular__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper popular__price">
+                            <div class="product__container">
+                                <p class="product__old-price popular__old-price">45 000 ₽</p>
+                                <p class="product__new-price popular__new-price">25 000 ₽</p>
+                                <p class="product__credit popular__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product__block popular__block">
+                        <p class="product__sales popular__sales">-50%</p>
+                        <img class="product__img" src="images/popular_mobile.png" alt="сплит-система">
+                        <div class="product">
+                            <h2 class="product__title popular__title">Сплит-система Mitsubishi Electric или длинный заголовок в 3 строки</h2>
+                            <div class="popular__check">
+                                <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                <p class="popular__check-text">В наличии</p>
+                            </div>
+                            <button class="product__like popular__like"></button>               
+                        </div>
+                        <div class="product__stars popular__stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star no-checked"></span>
+                        </div>
+                        <div class="product__wrapper popular__price">
+                            <div class="product__container">
+                                <p class="product__old-price popular__old-price">45 000 ₽</p>
+                                <p class="product__new-price popular__new-price">25 000 ₽</p>
+                                <p class="product__credit popular__credit">от 2500 ₽/мес</p>
+                            </div>
+                            <button class="product__button popular__button" type="button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="slider">
+                      <div class="slider__wrapper">
+                        <div class="slider__items">
+                          <div class="slider__item">
+                            <div class="product__block popular__block">
+                                <p class="product__sales popular__sales">-50%</p>
+                                <img class="product__img" src="images/productImg1.png" alt="сплит-система">
+                                <div class="product">
+                                    <h2 class="product__title">Сплит-система Mitsubishi Electric</h2>
+                                    <div class="popular__check">
+                                        <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                        <p class="popular__check-text">В наличии</p>
+                                    </div>
+                                    <button class="product__like popular__like"></button>               
+                                </div>
+                                <div class="product__stars popular__stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star no-checked"></span>
+                                </div>
+                                <div class="product__wrapper">
+                                    <div class="product__container">
+                                        <p class="product__old-price">45 000 ₽</p>
+                                        <p class="product__new-price">25 000 ₽</p>
+                                        <p class="product__credit">от 2500 ₽/мес</p>
+                                    </div>
+                                    <button class="product__button popular__button" type="button">Купить</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="slider__item">
+                            <div class="product__block popular__block">
+                        
+                                <img class="product__img" src="images/productImg2.png" alt="Кассетный кондиционер">
+                                <div class="product">
+                                    <h2 class="product__title popular__header">Кассетный кондиционер  Mitsubishi Electric</h2>
+                                    <button class="product__like popular__like"></button> 
+                                    <div class="popular__check">
+                                        <img class="popular__check-on" src="images/Check-on.svg" alt="check">
+                                        <p class="popular__check-text">В наличии</p>
+                                    </div>              
+                                </div>
+                                <div class="product__stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star no-checked"></span>
+                                </div>
+                                <div class="product__wrapper">
+                                    <div class="product__container">
+                                        <p class="product__old-price">45 000 ₽</p>
+                                        <p class="product__new-price">25 000 ₽</p>
+                                        <p class="product__credit">от 2500 ₽/мес</p>
+                                    </div>
+                                    <button class="product__button popular__button" type="button">Купить</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="slider__item">
+                            <div class="product__block popular__block">
+                                <img class="product__img" src="images/productImg3.png" alt="Компактный вентилятор">
+                                <div class="product">
+                                    <h2 class="product__title popular__header">Компактный вентилятор Mitsubishi Electric</h2>
+                                    <button class="product__like popular__like"></button> 
+                                    <div class="popular__check">
+                                        <img class="popular__check-on" src="images/Check-in.svg" alt="check">
+                                        <p class="popular__check-text_in">В наличии</p>
+                                    </div>              
+                                </div>
+                                <div class="product__stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star no-checked"></span>
+                                </div>
+                                <div class="product__wrapper">
+                                    <div class="product__container">
+                                        <p class="product__old-price">45 000 ₽</p>
+                                        <p class="product__new-price">25 000 ₽</p>
+                                        <p class="product__credit">от 2500 ₽/мес</p>
+                                    </div>
+                                    <button class="product__button popular__button" type="button">Купить</button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="slider__item">
+                            <div class="product__block popular__block">
+                                <img class="product__img" src="images/productImg3.png" alt="Компактный вентилятор">
+                                <div class="product">
+                                    <h2 class="product__title popular__header">Компактный вентилятор Mitsubishi Electric</h2>
+                                    <button class="product__like popular__like"></button> 
+                                    <div class="popular__check">
+                                        <img class="popular__check-on" src="images/Check-in.svg" alt="check">
+                                        <p class="popular__check-text_in">В наличии</p>
+                                    </div>              
+                                </div>
+                                <div class="product__stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star no-checked"></span>
+                                </div>
+                                <div class="product__wrapper">
+                                    <div class="product__container">
+                                        <p class="product__old-price">45 000 ₽</p>
+                                        <p class="product__new-price">25 000 ₽</p>
+                                        <p class="product__credit">от 2500 ₽/мес</p>
+                                    </div>
+                                    <button class="product__button popular__button" type="button">Купить</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slider__control" data-slide="prev"></a>
+                      <a href="#" class="slider__control" data-slide="next"></a>
+                      <ol class="slider__indicators">
+                        <li data-slide-to="0"></li>
+                        <li data-slide-to="1"></li>
+                        <li data-slide-to="2"></li>
+                        <li data-slide-to="3"></li>
+                        <li data-slide-to="4"></li>
+                      </ol>
+                    </div>
+                
+                  </div>
+            </section>
+
+            <section class="view">
+                <div class="popular__wrapper">
+                    <h2 class="popular__title">Виды кондиционеров</h2>
+                    <a class="popular__button" href="conditioners.html"></a>
+                </div>
+                
+                <div class="container">
+
+                    <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider1.png" alt="слайдер">
+                                Настенные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider2.png" alt="слайдер">
+                                Кассетные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider3.png" alt="слайдер">
+                                Канальные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider4.png" alt="слайдер">
+                                Сптит-системы
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider5.png" alt="слайдер">
+                                Напольные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider6.png" alt="слайдер">
+                                Внешние блоки
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider7.png" alt="слайдер">
+                                Колонные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider8.png" alt="слайдер">
+                                Полупромышленные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider9.png" alt="слайдер">
+                                Мобильные
+                            </a>
+                            <a class="slider__item" href="#">
+                                <img class="slider__img" src="images/slider10.png" alt="слайдер">
+                                Напольно-потолочные
+                            </a>
+                            <div class="slider__item">                              
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section class="consult">
+                <div class="consult__wrapper">
+                    <h2 class="consult__title">Проконсультируйтесь со специалистом</h2>
+                    <p class="consult__text">Наши специалисты помогут подобрать нужную модель оборудования под ваши условия</p>
+                    <button class="consult__button">Оставить заявку</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <img class="footer__logo" src="images/logo-footer.svg" alt="логотип">
+                    <p class="footer__text">
+                        Осуществляя вход на этот сайт, вы подтверждаете, что ознакомлены 
+                        с Пользовательским соглашением и Политикой конфиденциальности. 
+                    </p>
+                    <div class="footer__form">
+                        <p class="footer__text footer__text_width">Получайте новости о скидках и акциях</p>
+                        <form class="footer__form-wrapper">
+                            <input class="footer__input" type="text" placeholder="E-mail">
+                            <button class="footer__button" type="submit"></button>
+                        </form>
+                    </div>
+                    
+                </div>
+                <nav class="footer__wrapper">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="conditioners.html">Кондиционеры</a>
+                            <a class="footer__link" href="#">Cплит системы</a>
+                            <a class="footer__link" href="#">Компрессорно - конденсаторные блоки</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Фанкойлы</a>
+                            <a class="footer__link" href="#">Чиллеры</a>
+                            <a class="footer__link" href="#">Вентиляция</a>
+                            <a class="footer__link" href="#">Фанкойлы</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Отопление</a>
+                            <a class="footer__link" href="#">Микроклимат</a>
+                            <a class="footer__link" href="#">Комплектующие</a>
+                            <a class="footer__link" href="#">Воздуховоды</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link" href="delivery.html">Доставка</a>
+                            <a class="footer__link" href="montash.html">Монтаж</a>
+                            <a class="footer__link" href="sales.html">Акции</a>
+                            <a class="footer__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__contacts">
+                        <a class="footer__phone">+7 (495) 926-08-22</a>
+                        <p class="footer__info">c 9:00 до 21:00</p>
+                        <p class="footer__info">info@vertex-climat.com</p>
+                    </div>
+
+                    <div class="footer__address">
+                        <p class="footer__info">г.Москва, ул. Пушкина 19</p>
+                    </div>
+                </nav>
+
+                <ul class="menu-mobile__list menu-mobile__list_footer">
+                    <li class="menu-mobile__item">
+                      <input class="menu-mobile__input" type="checkbox" checked>
+                      <i class="menu-mobile__arrow menu-mobile__arrow_footer"></i>
+                      <h2 class="menu-mobile__title menu-mobile__title_footer">Разделы сайта</h2>                            
+                        <nav class="nav-mobile">
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="conditioners.html">Кондиционеры</a>                                   
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Микроклимат</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Комплектующие</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Отопление</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Фанкойлы</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Чиллеры</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Мульти-сплит системы</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Компрессорно- конденсаторные блоки</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Вентиляция</a>
+                            <a class="nav-mobile__link nav-mobile__link_footer" href="#">Воздуховоды</a>
+                        </nav>
+                    </li>
+
+                    <li class="menu-mobile__item">
+                        <input class="menu-mobile__input" type="checkbox" checked>
+                        <i class="menu-mobile__arrow menu-mobile__arrow_footer"></i>
+                        <h2 class="menu-mobile__title menu-mobile__title_footer">Контакты</h2>                            
+                          <nav class="nav-mobile">
+                              <a class="nav-mobile__link nav-mobile__link_footer">+7 (495) 926-08-22</a>                                   
+                              <a class="nav-mobile__link nav-mobile__link_footer">c 9:00 до 21:00</a>
+                              <a class="nav-mobile__link nav-mobile__link_footer">info@vertex-climat.com</a>
+                              <a class="nav-mobile__link nav-mobile__link_footer">г.Москва, ул. Пушкина 19</a>
+                          </nav>
+                      </li>
+                </ul>
+
+                <div class="info">
+                    <p class="info__years">&#169; 2016–2020 Колд дэй</p>
+                    <p class="info__doc">ОГРН 2244657709  ИНН 2244657709</p>
+                    <ul class="info__list">
+                        <li class="info__item"><img src="images/MCard.svg"></li>
+                        <li class="info__item"><img src="images/visa.svg"></li>
+                        <li class="info__item"><img src="images/mir.svg"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="scripts/index.js"></script>
+        <script src="scripts/slide.js"></script>
+        <script src="scripts/countdown.js"></script>
+        <script src="scripts/chief-slider.min.js"></script>
+    </body>
+</html>

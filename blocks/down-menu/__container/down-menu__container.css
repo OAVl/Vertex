@@ -1,0 +1,11 @@
+.down-menu__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media (max-width: 1199px) {
+    .down-menu__container {
+        padding: 0 24px;
+    }
+}

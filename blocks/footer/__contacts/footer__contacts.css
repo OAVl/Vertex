@@ -1,0 +1,13 @@
+.footer__contacts {
+    margin-left: 112px;
+}
+
+@media (max-width: 1199px) {
+    .footer__contacts {
+        margin-left: 0;
+        position: absolute;
+        top: -140px;
+        right: 118px;
+    }
+}
+

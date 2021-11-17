@@ -1,0 +1,15 @@
+.menu__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1199px) {
+    .menu__list {
+        display: grid;
+        grid-template-columns: 270px 434px;
+        position: relative;
+    }
+}

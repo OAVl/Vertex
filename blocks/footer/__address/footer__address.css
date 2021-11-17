@@ -1,0 +1,12 @@
+.footer__address {
+   margin-left: 45px;
+}
+
+@media (max-width: 1199px) {
+   .footer__address {
+      margin-left: 0;
+      position: absolute;
+      top: -60px;
+      right: 100px;
+   }
+}

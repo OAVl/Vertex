@@ -1,0 +1,11 @@
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 0;
+}
+
+.footer__item:first-child {
+    margin-right: 26px;
+    width: 212px;
+}

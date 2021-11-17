@@ -1,0 +1,102 @@
+.search {
+    margin: 10px 0 0 91px;
+}
+
+#wrap {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .search__form {
+        display: none;
+    }
+
+    .search {
+        margin-left: auto;
+    }
+
+    #wrap {
+        display: inline-block;
+        position: relative;
+        margin-top: 3px;
+      }
+      
+      .wrap__input1 {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 150%;
+        border: none;
+        outline: none;
+        color: #FFF;
+        padding: 3px;
+        padding-right: 60px;
+        width: 0;
+        position: absolute;
+        background: none;
+        top: -2px;
+        right: -7px;
+        z-index: 3;
+        transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+        cursor: pointer;
+      }
+
+      .wrap__input1::placeholder {
+          color: #FFF;
+      }
+      
+      .wrap__input1:focus {
+        width: 290px;
+        z-index: 1;
+        border: 1px solid #BBB;
+        cursor: text;
+        background: rgba(255,255,255, 0.3);
+        border-radius: 100px;
+        padding-left: 10px;
+      }
+
+      .wrap__input2 {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background: url('../../images/search_mobile.svg') center center no-repeat;
+        text-indent: -10000px;
+        border: none;
+        z-index: 2;
+        cursor: pointer;
+        transition: opacity .4s ease;
+      }
+      
+      .wrap__input2:hover {
+        opacity: 0.8;
+      }
+}
+
+@media (max-width: 767px) {
+  #wrap {
+    width: 290px; 
+    margin-bottom: 30px;
+  }
+
+  .wrap__input1 {
+    width: 290px;
+    border: 1px solid rgba(142, 147, 150, 0.5);
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding-left: 42px;
+    color: #8E9396;
+  }
+
+  .wrap__input2 {
+    background: url('../../images/search_menu.svg') center center no-repeat;
+    margin-left: -238px;
+    margin-top: 1px;
+  }
+
+  .wrap__input1::placeholder {
+    color: #8E9396;
+  }
+
+  .wrap__input1:focus {
+    padding-left: 42px;
+  }
+}

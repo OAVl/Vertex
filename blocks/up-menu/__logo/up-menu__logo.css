@@ -1,0 +1,11 @@
+.up-menu__logo {
+    width: 181px;
+    height: 41px;
+}
+
+@media (max-width: 767px) {
+    .up-menu__logo {
+        width: 110px;
+        height: 25px;
+    }
+}

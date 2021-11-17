@@ -1,0 +1,14 @@
+.up-menu__text {
+    margin: 5px 0 0 16px;
+    max-width: 178px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #E71B20;
+}
+
+@media (max-width: 767px) {
+    .up-menu__text {
+        display: none;
+    }
+}

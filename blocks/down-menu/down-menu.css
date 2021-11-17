@@ -1,0 +1,11 @@
+.down-menu {
+  background: linear-gradient(92.1deg, #008E9A 6.06%, #0072CF 99.5%);
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .down-menu {
+     display: none;
+  }
+}

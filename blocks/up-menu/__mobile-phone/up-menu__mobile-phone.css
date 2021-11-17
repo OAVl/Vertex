@@ -1,0 +1,17 @@
+.up-menu__mobile-phone {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .up-menu__mobile-phone {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: #008E9A;
+        border-radius: 100%;
+        background-image: url('../../../images/call_mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: auto;
+    }
+}

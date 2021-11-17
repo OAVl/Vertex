@@ -1,0 +1,25 @@
+.down-menu__title {
+    margin: 11px 0 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.down-menu__title_desktop {
+    display: block;
+}
+
+.down-menu__title_mobile {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .down-menu__title_desktop {
+        display: none;
+    }
+    
+    .down-menu__title_mobile {
+        display: block;
+    }
+}

@@ -1,0 +1,30 @@
+.down-menu__line {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+  }
+  
+  .down-menu__line:first-child {
+    margin-top: 0;
+  }
+
+  @media (max-width: 767px) {
+    .down-menu__line_mobile {
+      width: 16.3px;
+      margin-left: 8px;
+      display: block;
+      height: 2px;
+      background-color: #FFF;
+      margin-top: 5px;
+      transition: all .1s linear .23s;
+      position: relative;
+    }
+
+    .down-menu__line_mobile:first-child {
+      margin-top: 8px;
+    }
+}

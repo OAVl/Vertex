@@ -1,0 +1,17 @@
+.up-menu__mobile-cart {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .up-menu__mobile-cart {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: #008E9A;
+        border-radius: 100%;
+        background-image: url('../../../images/cart_mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 23px 0 22px;
+    }
+}

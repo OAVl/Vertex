@@ -1,0 +1,107 @@
+.consult {
+    max-width: 1200px;
+    height: 400px;
+    background: linear-gradient(270deg, #CDCAE0 50.77%, rgba(210, 204, 218, 0) 54.6%, rgba(205, 202, 224, 0) 26.6%), url('../../images/consult.png') left no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -25px;
+}
+
+.consult__title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    color: #E71B20;
+    margin: 0 0 20px 0;
+}
+
+.consult__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #F4F6F8;
+    margin: 0 0 35px 0;
+}
+
+.consult__button {
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(92.1deg, #EA7125 6.06%, #D6083B 99.5%);
+    border-radius: 10px;
+    width: 280px;
+    height: 55px;
+    border: none;
+    padding-left: 60px;
+}
+
+.consult__wrapper {
+    width: 504px;
+}
+
+@media (max-width: 1199px) {
+    .consult {
+        height: 370px;
+        margin-bottom: -15px;
+    }
+
+    .consult__title {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .consult__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .consult__wrapper {
+        width: 313px;
+    }
+
+    .consult__button {
+        width: 219px;
+        height: 53px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .consult {
+        height: 280px;
+        margin-bottom: -10px;
+        background: #00B1C1;
+        justify-content: center;
+    }
+
+    .consult__title {
+        color: #FFFFFF;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .consult__text {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+
+    .consult__wrapper {
+        width: 273px;
+        text-align: center;
+    }
+
+    .consult__button {
+        width: 219px;
+        height: 53px;
+        padding-left: 30px;
+        margin-left: 25px;
+    }
+}

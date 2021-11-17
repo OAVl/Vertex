@@ -1,0 +1,45 @@
+.down-menu__checkbox {
+    display: none;
+  }
+ 
+.down-menu__checkbox:checked ~ .down-menu__burger {
+  top: 28px;
+}
+
+.down-menu__checkbox:checked ~ .hidden-menu {
+  right: 0;
+}
+
+.down-menu__checkbox:checked ~ .down-menu__burger .down-menu__line_number_one {
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.down-menu__checkbox:checked ~ .down-menu__burger .down-menu__line_number_two {
+  opacity: 0;
+}
+
+.down-menu__checkbox:checked ~ .down-menu__burger .down-menu__line_number_three {
+  transform: rotate(-45deg);
+  top: -9px;
+}
+
+@media (max-width: 767px) {
+  .down-menu__checkbox_mobile {
+    display: none;
+  }
+
+  .down-menu__checkbox_mobile:checked ~ .down-menu__burger_mobile .down-menu__line_number_one {
+    transform: rotate(45deg);
+    top: 5px;
+  }
+  
+  .down-menu__checkbox_mobile:checked ~ .down-menu__burger_mobile .down-menu__line_number_two {
+    opacity: 0;
+  }
+  
+  .down-menu__checkbox_mobile:checked ~ .down-menu__burger_mobile .down-menu__line_number_three {
+    transform: rotate(-45deg);
+    top: -9px;
+  }
+}

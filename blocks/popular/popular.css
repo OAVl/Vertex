@@ -1,0 +1,280 @@
+.popular {
+    max-width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+}
+
+.popular__wrapper {
+    display: flex;
+    margin: 0 0 26px 46px;
+}
+
+.popular__title {
+    margin: 0 20px 0 0;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    color: #00B1C1;
+}
+
+.popular__container {
+    display: flex;
+    margin-right: 46px;
+    margin-left: 23px;
+}
+
+.popular__sales {
+    top: 54px;
+    right: 10px;
+}
+
+.popular__block {
+    box-shadow: none;
+    width: 277px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 430px;
+    padding-bottom: 23px;
+    padding-top: 14px;
+}
+
+.popular__block:hover {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.popular__header {
+    margin-top: -5px;
+}
+
+.popular__like {
+    top: 13px;
+}
+
+.popular__check {
+    display: flex;
+    position: absolute;
+    top: 13px;
+    left: 18px;
+}
+
+.popular__check-text {
+    margin: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #00B1C1;
+}
+
+.popular__check-text_in {
+    margin: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #EA7125;
+}
+
+.popular__stars {
+    margin-top: 40px;
+}
+
+.popular__button {
+    background-position: right;
+    background-position-x: 85%;
+    padding-left: 17px;
+    padding-right: 99px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.popular .container {
+    display: none;
+}
+
+.popular__container_mobile {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .popular__container {
+        display: none;
+    }
+
+    .popular__wrapper {
+        display: flex;
+        margin: 0 0 26px 25px;
+    }
+
+    .popular .container {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    
+      .popular .slider__wrapper {
+        overflow: hidden;
+      }
+
+      .popular .slider__items {
+          margin-left: 25px;
+      }
+    
+      .popular .slider__item {
+        flex: 0;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .popular .slider__control {
+          display: none;
+      }
+
+      .popular .slider__indicators {
+        margin-left: -50%;
+        margin-right: 0;
+        bottom: -70px;
+      }
+
+      .popular .slider__indicators li.active {
+        background: linear-gradient(92.1deg, #EA7125 6.06%, #D6083B 99.5%);
+    }
+
+        .popular .slider__indicators li {
+            box-sizing: content-box;
+            flex: 0 1 auto;
+            width: 72px;
+            height: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            margin: 0;
+            border: 0;
+        }
+}
+
+@media (max-width: 767px) {
+    .popular .container {
+        display: none;
+    }
+
+    .popular__container_mobile {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-left: 8px;
+    }
+
+    .popular {
+        max-width: 1200px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        margin-bottom: 35px;
+    }
+
+    .popular__block {
+        align-items: center;
+        width: 140px;
+        height: 352px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.12);
+        margin-left: 0;
+    }
+
+    .popular__wrapper {
+        display: flex;
+        margin: 0 0 26px 16px;
+        width: 356px;
+    }  
+
+    .popular__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #00B1C1;
+    }
+
+    .popular__check-text {
+        margin-top: -2px;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .popular__check-on {
+        width: 8px;
+        height: 8px;
+    }
+
+    .popular__like {
+        top: 10px;
+    }
+
+    .popular__title {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        color: #8E9396;
+        width: 124px;
+    }
+
+    .popular__stars {
+        margin: 8px 0 0 0;
+        font-size: 5px;
+    }
+
+    .popular__stars span {
+        margin-right: 5px;
+    }
+
+    .popular__price {
+        align-items: center;
+        flex-direction: column;
+        margin: 16px 0 0 0;
+        text-align: center;
+    }
+
+    .popular__old-price {
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 150%;
+    }
+
+    .popular__new-price {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .popular__credit {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+    }
+
+    .popular__button {
+        padding-left: 13px;
+        padding-right: 90px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 9px;
+    }
+
+    .popular__sales {
+        top: 35px;
+        padding: 10px 5px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

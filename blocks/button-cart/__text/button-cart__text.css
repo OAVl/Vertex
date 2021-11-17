@@ -1,0 +1,13 @@
+.button-cart__text {
+    margin: 7px 0 0 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+    .button-cart__text {
+        display: none;
+    }
+}

@@ -1,0 +1,28 @@
+.nav-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .nav-mobile {
+        margin-top: 16.5px;
+        margin-bottom: 18px;
+        display: grid;
+        grid-template-columns: 130px 160px;
+        gap: 8px;
+    }
+
+    .nav-mobile__link {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 150%;
+        color: #8E9396;
+    }
+
+    .nav-mobile__link_footer {
+        color: #FFF;
+    }
+    
+    .nav-mobile__link:hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,18 @@
+.up-menu__nav {
+    margin-top: 13px;
+}
+
+.up-menu__nav_mobile {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .up-menu__nav {
+       display: none;
+    }
+    
+    .up-menu__nav_mobile {
+        display: grid;
+        gap: 30px;
+    }
+}

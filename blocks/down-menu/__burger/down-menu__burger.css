@@ -1,0 +1,22 @@
+ .down-menu__burger {
+    margin: 18px 11px 18px 0;
+    cursor: pointer;
+    z-index: 3;
+    width: 22px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  @media (max-width: 767px) {
+    .down-menu__burger_mobile {
+      width: 32px;
+      height: 32px;
+      background-color: #008E9A;
+      border-radius: 100%;
+      margin: 0;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      cursor: pointer;
+      z-index: 3;
+    }
+}

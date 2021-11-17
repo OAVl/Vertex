@@ -1,0 +1,29 @@
+.menu__link {
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.menu__link:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .menu__item:nth-child(3) .menu__link {
+        width: 270px;
+    }
+
+    .menu__item:nth-child(3) .menu__link:nth-child(2) {
+        grid-column: 2;
+        margin-top: -61px;
+    }
+
+    .menu__item:nth-child(3) .menu__link:nth-child(3) {
+        grid-column: 2;
+        margin-top: -61px;
+    }
+
+    .menu__item:nth-child(2) .menu__link {
+        margin-bottom: 0;
+    }
+}

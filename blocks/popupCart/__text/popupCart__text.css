@@ -1,0 +1,13 @@
+.popupCart__text {
+    margin: 0;
+    width: 223px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.popupCart__text_total {
+    font-size: 20px;
+    line-height: 27px;
+}

@@ -1,0 +1,372 @@
+.catalog-menu {
+    max-width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+}
+
+.catalog-menu__wrapper {
+    display: flex;
+    margin: 0 0 26px 46px;
+}
+
+.catalog-menu__title {
+    margin: 0 20px 0 0;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    color: #00B1C1;
+}
+
+.catalog-menu__container {
+    margin-left: 46px;
+    margin-right: 46px;
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.catalog-menu__link {
+    text-decoration: none;
+    display: block;
+    min-width: 206px;
+    min-height: 163px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: #008E9A;
+    position: relative;
+}
+
+.catalog-menu__text {
+    margin: 112px 0 0 27px; 
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.catalog-menu__img {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    z-index: 1;
+}
+
+.catalog-menu__link:nth-child(3) .catalog-menu__img {
+    right: -50px;
+}
+
+.catalog-menu__link:first-child {
+    background: url('../../images/index_catalog1.png') no-repeat center;
+    background-size: cover;
+    
+}
+
+.catalog-menu__link:nth-child(2) {
+    background: url('../../images/index_catalog2.png') no-repeat center;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4; 
+}
+
+
+
+.catalog-menu__link:nth-child(3) {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.catalog-menu__link:nth-child(5) {
+    grid-row: 1;
+    grid-column: 5;
+    margin-left: -26px;
+}
+
+.catalog-menu__link:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.catalog-menu__link:nth-child(9) {
+    grid-row: 3;
+    grid-column: 4;
+    max-width: 180px;
+}
+
+.catalog-menu__link:nth-child(10) {
+    grid-row: 3;
+    grid-column: 5;
+}
+
+.catalog-menu__link:nth-child(3),
+.catalog-menu__link:nth-child(5),
+.catalog-menu__link:nth-child(9) {
+    background: linear-gradient(92.1deg, #008E9A 6.06%, #0072CF 99.5%);
+}
+
+.catalog-menu__link:nth-child(6),
+.catalog-menu__link:nth-child(10) {
+    background: linear-gradient(92.1deg, #EA7125 6.06%, #D6083B 99.5%);
+}
+
+.catalog-menu__link:nth-child(4) {
+    background: url('../../images/index_catalog4.png') no-repeat center;
+    background-size: cover;
+    grid-column: 3 / 5;
+    grid-row: 1;
+    max-width: 412px;
+}
+
+.catalog-menu__link:nth-child(7) {
+    background: url('../../images/index_catalog7.png') no-repeat center;
+    background-size: cover;
+    grid-row: 2;
+    grid-column: 4 / -1;
+}
+
+.catalog-menu__link:nth-child(8) {
+    background: url('../../images/index_catalog8.png') no-repeat center;
+    background-size: cover;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.catalog-menu__img-mobile {
+    display: none;
+}
+
+.catalog-menu__link:nth-child(2) .catalog-menu__text {
+    margin: 65px 0 0 27px;
+}
+
+.catalog-menu__link:nth-child(3) .catalog-menu__text {
+    margin: 26px 0 0 23px;
+}
+
+.catalog-menu__link:nth-child(4) .catalog-menu__text {
+    margin: 112px 0 0 42px;
+}
+
+.catalog-menu__link:nth-child(5) .catalog-menu__text {
+    margin: 32px 0 0 16px;
+    z-index: 2;
+    position: relative;
+}
+
+.catalog-menu__link:nth-child(6) .catalog-menu__text {
+    margin: 23px 0 0 21px;
+}
+
+.catalog-menu__link:nth-child(7) .catalog-menu__text {
+    margin: 105px 0 0 27px;
+}
+
+.catalog-menu__link:nth-child(8) .catalog-menu__text {
+    margin: 82px 0 0 18px;
+}
+
+.catalog-menu__link:nth-child(9) .catalog-menu__text {
+    margin: 14px 0 0 17px;
+}
+
+.catalog-menu__link:nth-child(10) .catalog-menu__text {
+    margin: 14px 0 0 16px;
+}
+
+@media (max-width: 1199px) {
+    .catalog-menu {
+        padding-top: 25px;
+        padding-bottom: 50px;
+        margin-bottom: 35px;
+    }
+
+    .catalog-menu__container {
+        margin-left: 25px;
+        margin-right: 25px;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .catalog-menu__wrapper {
+        margin: 0 0 26px 25px;
+    }
+
+    .catalog-menu__link:nth-child(2) {
+       
+        grid-column: 2;
+        grid-row: 2; 
+    }
+
+    .catalog-menu__link:nth-child(2) .catalog-menu__text {
+        margin: 24px 0 0 27px;
+    }
+
+    .catalog-menu__link:nth-child(4) {
+        grid-column: 3;
+    }
+
+    .catalog-menu__link:nth-child(6) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .catalog-menu__link:nth-child(5) {
+        grid-row: 2;
+        grid-column: 3;
+        margin-left: 0;
+    }
+
+    .catalog-menu__link:nth-child(7) {
+        background: url('../../images/index_catalog7_tablet.png') no-repeat center;
+        background-size: cover;
+        grid-row: 3 / -1;
+        grid-column: 1;
+    }
+
+    .catalog-menu__link:nth-child(10) {
+        grid-row: 3;
+        grid-column: 2 / -1;
+        margin-left: 0;
+    }
+
+    .catalog-menu__link:nth-child(9) {
+        grid-row: 4;
+        grid-column: 2;
+        max-width: none;
+    }
+
+    .catalog-menu__link:nth-child(8) {
+        grid-row: 4;
+        grid-column: 3;
+    }
+
+    .catalog-menu__link:nth-child(4) .catalog-menu__text {
+        margin: 114px 0 0 42px;
+    }
+
+    .catalog-menu__link:nth-child(7) .catalog-menu__text {
+        margin: 278px 0 0 21px;
+    }
+
+    .catalog-menu__link:nth-child(10) .catalog-menu__text {
+        margin: 23px 0 0 16px;
+        width: 266px;
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog-menu__img-mobile {
+        display: block;
+    }
+
+    .catalog-menu__container {
+        margin-left: 19px;
+        margin-right: 19px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog-menu__wrapper {
+        margin: 0 0 26px 19px;
+    }
+
+    .catalog-menu__link {
+        text-decoration: none;
+        display: flex;
+        min-width: 100%;
+        min-height: 40px;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(142,147,150, 0.3);
+        position: relative;
+    }
+    
+    .catalog-menu__link::before {
+        content: ' ';
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        background-color: #8E9396;
+        width: 2px;
+        height: 10px;
+        transform: rotate(-45deg);
+    }
+
+    .catalog-menu__link::after {
+        content: ' ';
+        position: absolute;
+        top: 16px;
+        right: 6px;
+        background-color: #8E9396;
+        width: 2px;
+        height: 10px;
+        transform: rotate(45deg);
+    }
+
+    .catalog-menu__link:last-child {
+        border-bottom: none;
+    }
+
+    .catalog-menu__link:hover {
+        opacity: 0.5;
+    }
+
+    .catalog-menu__img {
+        display: none;
+    }
+
+    .catalog-menu__link:nth-child(3),
+    .catalog-menu__link:nth-child(5),
+    .catalog-menu__link:nth-child(9),
+    .catalog-menu__link:nth-child(6),
+    .catalog-menu__link:nth-child(10),
+    .catalog-menu__link:nth-child(7),
+    .catalog-menu__link:nth-child(1),
+    .catalog-menu__link:nth-child(2),
+    .catalog-menu__link:nth-child(4),
+    .catalog-menu__link:nth-child(8) {
+        background: transparent;
+        width: 100%;
+        height: 40px;
+    }
+
+    .catalog-menu__link:nth-child(8) {
+        background: transparent;
+        width: 100%;
+        height: 40px;
+        padding-bottom: 8px;
+    }
+
+    .catalog-menu__link:nth-child(3) .catalog-menu__text,
+    .catalog-menu__link:nth-child(5) .catalog-menu__text,
+    .catalog-menu__link:nth-child(9) .catalog-menu__text,
+    .catalog-menu__link:nth-child(6) .catalog-menu__text,
+    .catalog-menu__link:nth-child(10) .catalog-menu__text,
+    .catalog-menu__link:nth-child(7) .catalog-menu__text,
+    .catalog-menu__link:nth-child(1) .catalog-menu__text,
+    .catalog-menu__link:nth-child(2) .catalog-menu__text,
+    .catalog-menu__link:nth-child(4) .catalog-menu__text,
+    .catalog-menu__link:nth-child(8) .catalog-menu__text {
+        margin: 6px 0 0 10px;
+    }
+
+    .catalog-menu__text {
+        margin: 0; 
+        width: 182px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #8E9396;
+    }
+
+    .catalog-menu__title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}

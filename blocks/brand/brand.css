@@ -1,0 +1,76 @@
+.brand {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    max-width: 1200px;
+    padding: 22px 0;
+    margin-bottom: 40px;
+}
+
+.brand__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand__item {
+    width: 143.5px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.brand__item_1 {
+    background-image: url('../../images/brand1_bw.png');
+}
+
+.brand__item_1:hover {
+    background-image: url('../../images/brand1_color.png');
+}
+
+.brand__item_2 {
+    background-image: url('../../images/brand2_bw.png');
+}
+
+.brand__item_2:hover {
+    background-image: url('../../images/brand2_color.png');
+}
+
+.brand__item_3 {
+    background-image: url('../../images/brand3_bw.png');
+}
+
+.brand__item_3:hover {
+    background-image: url('../../images/brand3_color.png');
+}
+
+.brand__item_4 {
+    background-image: url('../../images/brand4_bw.png');
+}
+
+.brand__item_4:hover {
+    background-image: url('../../images/brand4_color.png');
+}
+
+.brand__item_5 {
+    background-image: url('../../images/brand5_bw.png');
+}
+
+.brand__item_5:hover {
+    background-image: url('../../images/brand5_color.png');
+}
+
+.brand__item_6 {
+    background-image: url('../../images/brand6_bw.png');
+}
+
+.brand__item_6:hover {
+    background-image: url('../../images/brand6_color.png');
+}
+
+@media (max-width: 1199px) {
+    .brand {
+        margin-bottom: 35px;
+    }
+}

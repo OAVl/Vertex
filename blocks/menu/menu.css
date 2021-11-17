@@ -1,0 +1,22 @@
+.menu {
+    position: absolute;
+    top: 52px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 10px 10px;
+    width: 1136px;
+    z-index: 1;
+    padding: 31px 32px 30px;
+    display: none;
+}
+
+.menu_opened {
+    display: block;
+}
+
+@media (max-width: 1199px) {
+    .menu {
+        width: 698px;
+        left: -24px;
+    }
+}

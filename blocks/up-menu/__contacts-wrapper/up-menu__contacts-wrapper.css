@@ -1,0 +1,10 @@
+.up-menu__contacts-wrapper {
+    display: flex;
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .up-menu__contacts {
+        display: none;
+    }
+}

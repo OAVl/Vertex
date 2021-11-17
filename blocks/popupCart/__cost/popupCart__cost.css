@@ -1,0 +1,15 @@
+.popupCart__cost {
+    margin: 10px 0 0 66px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    
+}
+
+.popupCart__cost_total {
+    margin: 0;
+    font-size: 25px;
+    line-height: 34px;
+    color: #EA7125;
+}
